@@ -1,5 +1,6 @@
 :root{
- --basic-text-color: #212121;
+--background-color-before:#F5F4FA;
+--basic-text-color: #212121;
 --accent-color: #2196F3;
 --secondary-text-color: #FFF;
 --paragraph-text-color:#757575;
@@ -25,9 +26,6 @@ padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
 
-
-
-/* outline: solid 1px yellow; */
 
 
 }
@@ -97,6 +95,8 @@ list-style: none;
     margin-right: 50px;
   
 }
+
+
 
 .site-nav-link{
 
@@ -190,10 +190,11 @@ max-width: 1600px;
 margin-left: auto;
 margin-right: auto;
 background-position: center;
-background-image: url("../images/hero-img-jpg.jpg") ;
-
 background-size: cover;
 background-repeat: no-repeat;
+background-image:  url("../images/hero-img-jpg.jpg") ;
+
+
 
 
 
@@ -216,7 +217,34 @@ background-repeat: no-repeat;
 
 .advantages-item{
 
-} 
+}
+
+.advantages-item::before {
+display: block;
+content:"" ;
+
+height: 120px;
+width: auto;
+
+background-repeat: no-repeat;
+background-size: 70px 70px;
+background-position: center;
+background-color: var(--background-color-before);
+
+}
+
+.icon-antenna::before{
+background-image: url(../images/antenna.svg);
+}
+.icon-clock::before{
+    background-image: url(../images/clock.svg);
+}
+.icon-diagram::before{
+    background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before{
+    background-image: url(../images/astronaut.svg);
+}
 
 .advantages-list-title{
 
