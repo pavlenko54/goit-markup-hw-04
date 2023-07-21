@@ -381,14 +381,14 @@ align-items: center;
 justify-content: center;
 color: var(--color-icon);
 }
-.team-socials-link:hover{
+.team-socials-link:hover,:focus{
 background-color: var(--accent-color);
 }
 .team-socials-icon{
 fill: currentColor;
 }
 
-.team-socials-icon:hover{
+.team-socials-icon:hover,:focus{
 background-color: var(--accent-color);
 }
 
