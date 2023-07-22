@@ -242,42 +242,22 @@ background-image:linear-gradient( rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40) 
 
 }
 
-.advantages-icon{
-
-    margin: auto;
-    display: block;
-    justify-content: center;
-
-background-position: center;
-/* background-size: 270px 120px; */
-background-color: var(--background-color-before);
-}
-/* .advantages-item::before {
-display: block;
-content:"" ;
-
+.advantages-icon-bg{
+margin-bottom: 30px;
+width: 270px;
 height: 120px;
-width: auto;
-
-background-repeat: no-repeat;
-background-size: 70px 70px;
-background-position: center;
+display: block;
+background-size: 270px 120px;
 background-color: var(--background-color-before);
-
 }
 
-.icon-antenna::before{
-background-image: url(../images/antenna.svg);
+.advantages-icon{
+    margin: 25px 100px;
+justify-content: center;
+align-items: center;
 }
-.icon-clock::before{
-    background-image: url(../images/clock.svg);
-}
-.icon-diagram::before{
-    background-image: url(../images/diagram.svg);
-}
-.icon-astronaut::before{
-    background-image: url(../images/astronaut.svg);
-} */
+
+
 
 .advantages-list-title{
 
