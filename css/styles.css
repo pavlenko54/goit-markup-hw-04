@@ -394,6 +394,50 @@ background-color: var(--accent-color);
     margin-left: 10px;
 
 }
+/* ------------------section-clients----------------------- */
+.secton-clients{
+    outline: solid 1px red;
+}
+
+.clients-title{
+margin-bottom: 50px;
+
+color: var(--basic-text-color);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 0.88;
+letter-spacing: 1.08px;
+}
+
+.section-clients-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.clients-list-item{
+
+}
+
+.clients-list-item+.clients-list-item{
+margin-left: 30px;
+}
+
+.clients-link{
+    background-color: teal;
+width: 106px;
+height: 60px;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+
 /* ------------------footer----------------------- */
 .adress-footer{
     margin-bottom: 9px;
@@ -513,13 +557,11 @@ letter-spacing: 0.48px;
 
 }
 .projects-card{
-border-bottom: 1px solid #EEE;
     margin-top: 30px;
     margin-left: 30px;
 
 }
-.projects-list :hover,:focus{
-    /* border: 1px solid #EEE; */
+.projects-list-link :hover,:focus{
 box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
