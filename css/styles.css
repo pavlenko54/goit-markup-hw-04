@@ -136,6 +136,10 @@ list-style: none;
 
 }
 
+.contacts-item :hover{
+color: var(--accent-color);
+}
+
 .contacts-link{
 min-width: 135px;
 padding-top: 32px;
@@ -235,19 +239,17 @@ background-image:linear-gradient( rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40) 
 .advantages-list .advantages-item + .advantages-item{margin-left: 30px;}
 
 .advantages-item{
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
+
 }
 
 .advantages-icon{
-    
+
     margin: auto;
-    margin-bottom: 30px;
     display: block;
-align-items: center;
+    justify-content: center;
 
 background-position: center;
+/* background-size: 270px 120px; */
 background-color: var(--background-color-before);
 }
 /* .advantages-item::before {
