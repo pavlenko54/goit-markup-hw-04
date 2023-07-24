@@ -395,8 +395,8 @@ background-color: var(--accent-color);
 
 }
 /* ------------------section-clients----------------------- */
-.secton-clients{
-    outline: solid 1px red;
+.section-clients{
+/* background-color: red; */
 }
 
 .clients-title{
@@ -417,25 +417,37 @@ letter-spacing: 1.08px;
 
 }
 
-.clients-list-item{
 
-}
 
 .clients-list-item+.clients-list-item{
 margin-left: 30px;
 }
 
+.clients-link:hover,:focus {
+      border: 1px solid var(--accent-color);
+}
+
+.clients-link:hover,:focus.clients-icon{
+fill: var(--accent-color);
+}
+
 .clients-link{
-    background-color: teal;
-width: 106px;
-height: 60px;
+box-sizing: border-box;
+width: 170px;
+height: 92px;
 border-radius: 4px;
+border: 1px solid var(--color-icon);
+flex-shrink: 0;
 display: flex;
 align-items: center;
 justify-content: center;
+fill: var(--color-icon);
 
 }
 
+.clients-icon :hover{
+
+}
 
 
 /* ------------------footer----------------------- */
@@ -490,6 +502,26 @@ line-height: 2.28;
 letter-spacing: 0.28px;}
 .contacts-link-footer:hover,:focus{color: var(--accent-color);
 }
+
+.footer-title{
+    display: flex;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: var(--primary-font-color);
+    margin-bottom: 20px;
+
+
+    /* display: flex;
+    color: var(--secondary-text-color);
+font-size: 14px;
+font-weight: 700;
+line-height: 2.28;
+letter-spacing: 0.42px;
+text-transform: uppercase; */
+}
+
+
 
 /* ------------------portfolio-section----------------------- */
 .portfolio-section{
