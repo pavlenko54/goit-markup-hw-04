@@ -25,6 +25,10 @@ img{
     display: block;
 }
 
+.link{
+    text-decoration: none;
+    display: inline-block;
+}
 
 .container{
 width: 1230px;
@@ -639,10 +643,11 @@ letter-spacing: 0.48px;
     margin-left: 30px;
 
 }
-.projects-list-link :hover,:focus{
-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
 
+
+.projects-list-link :hover,:focus{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
 
 .projects-list-link{
     text-decoration: none;
