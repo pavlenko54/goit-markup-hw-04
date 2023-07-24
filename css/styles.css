@@ -125,23 +125,17 @@ list-style: none;
 .contacts-item{
     display: inline-flex;
     align-items: center;
-    color: var(--accent-color);
 }
 
 .contacts .contacts-item + .contacts-item{
     margin-left: 50px;
 }
 
-.contacts-link{
-
-}
-
-.contacts-item :hover{
-color: var(--accent-color);
-}
 
 .contacts-link{
-min-width: 135px;
+
+ display: flex;
+min-width: 142px;
 padding-top: 32px;
 padding-bottom: 32px;
 text-decoration: none;
@@ -150,25 +144,29 @@ text-decoration: none;
 
     font-size: 14px;
     font-weight: 500;
-    line-height: 2.28;
+    line-height: 1.1;
     letter-spacing: 0.28px;}
-.contacts-link:hover,:focus{color: var(--accent-color);
-}
 
-.header-contacts-icon :hover,:focus{
-fill: currentColor;
-}
 
-.header-contacts-icon{
-display: inline-flex;
-margin-right: 10px;
-cursor: pointer;
-fill: var(--color-icon);
-}
-
-.header-icon:hover,:focus{
+    .contacts-link:hover,:focus {
+    color: var(--accent-color);
+    }
+    
+    .contacts-link:hover .header-contacts-icon,
+    .contacts-link:focus .header-contacts-icon {
     fill: currentColor;
     }
+
+
+.header-contacts-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--color-icon);
+    margin-right: 10px;
+    
+}
+
 
 /* ------------------SECTION_HERO----------------------- */
 .section-hero{
