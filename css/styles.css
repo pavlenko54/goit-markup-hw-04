@@ -114,7 +114,9 @@ padding-bottom: 32px;
     line-height: 2.28;
     letter-spacing: 0.28px;}
 
-
+.site-nav-item :hover,:focus{
+color: var(--accent-color);
+}
 .contacts{
 display: flex;
 margin-left: auto;
@@ -394,7 +396,7 @@ background-color: var(--accent-color);
 }
 /* ------------------section-clients----------------------- */
 .section-clients{
-/* background-color: red; */
+
 }
 
 .clients-title{
@@ -421,13 +423,7 @@ letter-spacing: 1.08px;
 margin-left: 30px;
 }
 
-.clients-link:hover,:focus {
-      border: 1px solid var(--accent-color);
-}
 
-.clients-link:hover,:focus.clients-icon{
-fill: var(--accent-color);
-}
 
 .clients-link{
 box-sizing: border-box;
@@ -440,12 +436,16 @@ display: flex;
 align-items: center;
 justify-content: center;
 fill: var(--color-icon);
-
 }
 
-.clients-icon :hover{
-
+.clients-link:hover,:focus {
+    border: 1px solid var(--accent-color);
 }
+
+.clients-link:hover,:focus.clients-icon{
+fill: var(--accent-color);
+}
+
 
 
 /* ------------------footer----------------------- */
@@ -501,24 +501,37 @@ letter-spacing: 0.28px;}
 .contacts-link-footer:hover,:focus{color: var(--accent-color);
 }
 
-.footer-title{
-    display: flex;
+.footer-text{
+    /* display: flex;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.1;
     color: var(--primary-font-color);
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 
 
-    /* display: flex;
+    display: flex;
     color: var(--secondary-text-color);
 font-size: 14px;
 font-weight: 700;
 line-height: 2.28;
 letter-spacing: 0.42px;
-text-transform: uppercase; */
+text-transform: uppercase;
+}
+.footer-socail-list{
+
+}
+.footer-socail-item{
+
 }
 
+.footer-socail-link{
+
+}
+
+.footer-socail-icon{
+    
+}
 
 
 /* ------------------portfolio-section----------------------- */
