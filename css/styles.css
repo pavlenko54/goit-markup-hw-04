@@ -1,4 +1,5 @@
 :root{
+--border-color:#EEE;    
 --color-icon:#AFB1B8;
 --background-color-before:#F5F4FA;
 --basic-text-color: #212121;
@@ -35,10 +36,8 @@ width: 1230px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
-
-
-
 }
+
 .section{
 padding-bottom: 94px;
 padding-top: 94px;
@@ -589,9 +588,6 @@ fill: var(--secondary-text-color);
 
 .portfolio-list .portfolio-list-item + .portfolio-list-item{margin-left: 30px;}
 
-.portfolio-list-item{
-
-}
 
 .portfolio-list-btn{
     color: #F5F4FA;
@@ -620,49 +616,47 @@ line-height: 1.62;
 letter-spacing: 0.48px;
 }
 .projects-list{
-    margin-top: -30px;
-    margin-left: -30px;
-
-    flex-basis: calc(100% / 3 - 30px);
-    flex-wrap: wrap;
     display: flex;
-
-    
+    flex-wrap: wrap;
+    gap: 30px;
     list-style: none;
     text-decoration: none;
 
 }
-.projects-list{
-    margin-top: -30px;
-    margin-left: -30px;
 
 
-}
-.projects-card{
-    margin-top: 30px;
-    margin-left: 30px;
-
+.projects-card > .projects-card {
+    flex-basis: calc(100% / 3 - 30px);
 }
 
 
-.projects-list-link :hover,:focus{
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    }
-
+ 
+    
 .projects-list-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+
     text-decoration: none;
 }
 
+.projects-list-link:hover,:focus{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+
+
 .card-text{
-    padding-left: 24px;
-    padding-right: 24px;
-padding-bottom: 20px; 
-padding-top: 20px;
+
+
+    padding: 20px 24px;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
 }
 
 .projects-list-title{
 
-/* margin-top: 20px; */
     color: var(--basic-text-color);
 
 font-size: 18px;
@@ -672,10 +666,10 @@ letter-spacing: 1.08px;
 }
 .projects-list-text{
 
-    /* margin-bottom: 20px; */
+
+
 
     color: var(--paragraph-text-color);
-
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.48px;
