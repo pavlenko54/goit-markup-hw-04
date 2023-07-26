@@ -158,12 +158,12 @@ text-decoration: none;
     letter-spacing: 0.28px;}
 
     .contacts-link:hover,
-    .contacts-link :focus {
+    .contacts-link:focus {
     color: var(--accent-color);
     }
     
     .contacts-link:hover .header-contacts-icon,
-    .contacts-link:focus .header-contacts-icon {
+    .contacts-link:focus .header-contacts-icon{
     fill: currentColor;
     }
 
@@ -236,7 +236,6 @@ background-image:linear-gradient( rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40) 
 /* ------------------section-advantages----------------------- */
 .section-advantages{
 
-    background-color: white;
 
 }
 .advantages-list{
@@ -245,10 +244,6 @@ background-image:linear-gradient( rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40) 
 
 }
 .advantages-list .advantages-item + .advantages-item{margin-left: 30px;}
-
-.advantages-item{
-
-}
 
 .advantages-icon-bg{
 margin-bottom: 30px;
@@ -353,8 +348,6 @@ margin-bottom: 30px;
 }
 
 .team-list-title{
-
-
     color: var(--basic-text-color);
 
 text-align: center;
@@ -388,7 +381,8 @@ justify-content: center;
 color: var(--color-icon);
 }
 
-.team-socials-link:hover,:focus{
+.team-socials-link:hover,
+.team-socials-link:focus {
 background-color: var(--accent-color);
 fill: var(--background-color-before);
 }
@@ -398,7 +392,8 @@ fill: currentColor;
 
 }
 
-.team-socials-link:hover .team-socials-icon{
+.team-socials-link:hover .team-socials-icon,
+.team-socials-link:focus .team-socials-icon{
     fill: var(--secondary-text-color);
 }
 
@@ -408,10 +403,6 @@ fill: currentColor;
 
 }
 /* ------------------section-clients----------------------- */
-.section-clients{
-
-}
-
 .clients-title{
 margin-bottom: 50px;
 
@@ -451,11 +442,13 @@ justify-content: center;
 fill: var(--color-icon);
 }
 
-.clients-link:hover,:focus {
+.clients-link:hover,
+.clients-link:focus {
     border: 1px solid var(--accent-color);
 }
 
-.clients-link:hover,:focus.clients-icon{
+.clients-link:hover,
+.clients-link:focus{
 fill: var(--accent-color);
 }
 
@@ -549,10 +542,6 @@ text-transform: uppercase;
    
 
 }
-.footer-socials-item{
-
-}
-
 
 .footer-socials-item+.footer-socials-item{
     margin-left: 10px;
@@ -648,13 +637,13 @@ letter-spacing: 0.48px;
     text-decoration: none;
 }
 
-.projects-list-link:hover,:focus{
+.projects-list-link:hover,
+.projects-list-link:focus{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     }
 
 
 .card-text{
-    /* background-color: red; */
 
     padding: 20px 24px;
     border-left: 1px solid var(--border-color);
@@ -664,7 +653,6 @@ letter-spacing: 0.48px;
 }
 
 .projects-list-title{
-    outline: solid 1px red;
 
     color: var(--basic-text-color);
 
@@ -675,7 +663,6 @@ letter-spacing: 1.08px;
 
 }
 .projects-list-text{
-    outline: solid 1px red;
     color: var(--paragraph-text-color);
 font-size: 16px;
 line-height: 1.87;
