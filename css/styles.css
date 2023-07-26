@@ -7,7 +7,6 @@
 --secondary-text-color:#FFF;
 --paragraph-text-color:#757575;
 --bacground-color:#2F303A;
--moz-background-icon-color:rgba(255, 255, 255, 0.10);
 }
 p, h1, h2, h3, h4 ,h5, h6{
     padding: 0;
@@ -61,6 +60,7 @@ color: var(--basic-text-color);}
 
 
 /* ------------------HEADER----------------------- */
+
 .header{
 border-bottom: 1px solid #ECECEC;
 
