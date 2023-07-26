@@ -72,8 +72,6 @@ border-bottom: 1px solid #ECECEC;
 
 .logo {
     margin-right: 93px;
-    padding-top: 25px;
-    padding-bottom: 25px;
     margin-left: auto;
     text-decoration: none;
 
@@ -90,6 +88,7 @@ border-bottom: 1px solid #ECECEC;
 
 
 .site-nav{
+    padding: 0;
 display: flex;
 margin-right: 344px;
 list-style: none;
@@ -110,7 +109,7 @@ list-style: none;
 
 .site-nav-link{
 
-display: block;
+display: flex;
 padding-top: 32px;
 padding-bottom: 32px;
   text-decoration: none;
@@ -120,10 +119,13 @@ padding-bottom: 32px;
 
     font-size: 14px;
     font-weight: 500;
-    line-height: 2.28;
-    letter-spacing: 0.28px;}
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 
-.site-nav-item :hover,:focus{
+
+.site-nav-link:hover,
+.site-nav-link:focus{
 color: var(--accent-color);
 }
 .contacts{
@@ -147,8 +149,6 @@ list-style: none;
 
  display: flex;
 min-width: 142px;
-padding-top: 32px;
-padding-bottom: 32px;
 text-decoration: none;
 
     color: var(--paragraph-text-color);
@@ -158,8 +158,8 @@ text-decoration: none;
     line-height: 1.1;
     letter-spacing: 0.28px;}
 
-
-    .contacts-link:hover,:focus {
+    .contacts-link:hover,
+    .contacts-link :focus {
     color: var(--accent-color);
     }
     
@@ -388,16 +388,21 @@ align-items: center;
 justify-content: center;
 color: var(--color-icon);
 }
+
 .team-socials-link:hover,:focus{
 background-color: var(--accent-color);
-}
-.team-socials-icon{
-fill: currentColor;
+fill: var(--background-color-before);
 }
 
-.team-socials-icon:hover,:focus{
-background-color: var(--accent-color);
+.team-socials-icon{
+fill: currentColor;
+
 }
+
+.team-socials-link:hover .team-socials-icon{
+    fill: var(--secondary-text-color);
+}
+
 
 .team-socials-item+.team-socials-item{
     margin-left: 10px;
@@ -620,9 +625,9 @@ letter-spacing: 0.48px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
     list-style: none;
     text-decoration: none;
-
 }
 
 
@@ -646,16 +651,17 @@ letter-spacing: 0.48px;
 
 
 .card-text{
-
+    /* background-color: red; */
 
     padding: 20px 24px;
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
-
+    
 }
 
 .projects-list-title{
+    outline: solid 1px red;
 
     color: var(--basic-text-color);
 
@@ -663,15 +669,14 @@ font-size: 18px;
 font-weight: 700;
 line-height: 2;
 letter-spacing: 1.08px;
+
 }
 .projects-list-text{
-
-
-
-
+    outline: solid 1px red;
     color: var(--paragraph-text-color);
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.48px;
+
 }
 /* ------------------------------------------------------------- */
